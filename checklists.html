@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Documents</title>
+    <style>
+       h1 {
+        text-align: center; /* Centers the header */
+        color: rgb(233, 245, 250); /* Changes the font color */
+      }
+        body, html {
+          background-image: url("human-evolution.jpg"); /* Use the relative path */
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        height: 100vh;
+        margin: 0;
+        }
+        header {
+        background-color: #333;
+        padding: 10px;
+        text-align: center;
+      }
+
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+
+        .documents {
+            display: flex;
+            justify-content: space-around;
+            width: 80%;
+            margin-bottom: 20px;
+        }
+
+        .document {
+            position: relative;
+            text-align: center;
+        }
+
+       
+        .instruction {
+            position: top;
+            top: 10px;
+            left: 0;
+            right: 0;
+            color: white;
+            font-size: 20px;
+            font-weight: bold;
+            text-shadow: 1px 1px 2px black;
+        }
+
+        .buttons {
+            display: flex;
+            justify-content: space-around;
+            width: 80%;
+        }
+
+        .buttons button {
+          display: inline-block;
+      padding: 15px 30px;
+      background-color: #ce1039; /* Button background color */
+      color: white; /* Button text color */
+      font-size: 18px; /* Font size */
+      font-family: Arial, sans-serif; /* Font family */
+      border: none;
+      border-radius: 8px;
+      text-align: center;
+      text-decoration: none;
+      transition: background-color 0.3s ease;
+        }
+    </style>
+</head>
+<body>
+  <header>
+    <h2>CHECKLISTS</h2>
+  </header>
+  <h1>Complete checklists below every after each lesson. Click on "download checklist" below to get checklist. </h1>
+<div class="container">
+
+    <div class="documents">
+
+        <div class="document">
+
+           
+
+            <div class="instruction">Lesson 1 checklist</div>
+
+        </div>
+        <div class="document">
+            
+            <div class="instruction">Lesson 2 checklist</div>
+        </div>
+        <div class="document">
+            
+            <div class="instruction">Lesson 3 checklist</div>
+        </div>
+    </div>
+
+    <div class="buttons">
+        <button onclick="openDocument('LESSON 1 CHECKLIST.docx')">Download checklist 1</button>
+
+        <button onclick="openDocument('LESSON 2 CHECKLIST.docx')">Download checklist 2</button>
+
+        <button onclick="openDocument('LESSON 3 CHECKLIST.docx')">Download checklist 3</button>
+    </div>
+</div>
+
+<script>
+    function openDocument(doc) {
+        window.open(doc, '_blank');
+    }
+</script>
+
+</body>
+</html>

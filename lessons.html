@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <style>
+      .colored-text {
+    color: red; /* You can change this to any color you like */
+  }
+      /* General styling */
+      body {
+        background-image: url("human-evolution.jpg"); /* Use the relative path */
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        height: 100vh;
+        margin: 0;
+      }
+      header {
+        background-color: #333;
+        padding: 10px;
+        text-align: center;
+        color: white;
+      }
+      h1 {
+        text-align: center;
+        color: rgb(233, 245, 250);
+        padding: 20px;
+      }
+
+      /* Flexbox container for the videos and their related contents */
+      .video-section {
+        display: flex;
+        justify-content: space-around;
+        align-items: flex-start; /* Align items at the top */
+        padding: 20px;
+      }
+      .video-container {
+        width: 30%;
+        text-align: center;
+        background-color: #fff;
+        padding: 15px;
+        border: 1px solid #ccc;
+        margin: 10px;
+      }
+
+      /* Video and document styles */
+      video {
+        width: 100%;
+      }
+      .document {
+        display: block;
+        width: 100px;
+        height: 100px;
+        background-color: lightgray;
+        margin: 10px auto;
+        text-align: center;
+        padding-top: 40px; /* Center text vertically */
+      }
+
+      /* Link styling */
+      .link {
+        margin-top: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h2>Lessons</h2>
+    </header>
+
+    <h1>Watch the videos below in the order that they are in from lesson 1 to 3 and complete the activity under each lesson.</h1>
+    
+    <!-- Video Section with three videos and appropriate document/link -->
+    <div class="video-section">
+      <!-- Lesson 1 -->
+      <div class="video-container">
+        <h3>Lesson 1</h3>
+        <video controls>
+          <source src="First Lesson.webm" type="video/webm" />
+          Your browser does not support the video tag.
+        </video>
+        <a href="LESSON 1 ACTIVITY.pdf" download>
+          <div class="document">Download Lesson 1 ACTIVITY</div>
+        </a>
+      </div>
+
+      <!-- Lesson 2 -->
+      <div class="video-container">
+        <h3>Lesson 2</h3>
+        <video controls>
+          <source src="Second Lesson.webm" type="video/webm" />
+          Your browser does not support the video tag.
+        </video>
+        <div class="link">
+          <a href="https://ljux8y169gp.typeform.com/to/GR6uvHTy">Click <span class="colored-text">here</span> to complete lesson 2 quiz</a>
+        </div>
+      </div>
+
+      <!-- Lesson 3 -->
+      <div class="video-container">
+        <h3>Lesson 3</h3>
+        <video controls>
+          <source src="Fri Oct 11 2024 7_34_28 PM (1).webm" type="video/webm" />
+          Your browser does not support the video tag.
+        </video>
+        <a href="LESSON 3 ACTIVITY.pdf" download>
+          <div class="document">Download Lesson 3 ACTIVITY</div>
+        </a>
+      </div>
+    </div>
+
+    <footer>
+      <p>All rights reserved &copy; 2024</p>
+    </footer>
+  </body>
+</html>
+

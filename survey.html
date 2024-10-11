@@ -1,0 +1,129 @@
+
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Writing Log</title>
+    <style>
+      h1 {
+        text-align: center; /* Centers the header */
+        color: white; /* Changes the font color */
+      }
+      h2 {
+        text-align: center; /* Centers the header */
+        color: white; /* Changes the font color */
+      }
+      .container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+      }
+
+      .documents {
+        display: flex;
+        justify-content: space-around;
+        width: 80%;
+        margin-bottom: 20px;
+      }
+
+      .document {
+        position: relative;
+        text-align: center;
+      }
+
+      .instruction {
+        position: CENTER;
+        top: 10px;
+        left: 0;
+        right: 0;
+        color: white;
+        font-size: 20px;
+        font-weight: bold;
+        text-shadow: 1px 1px 2px black;
+      }
+
+      /* Update for centering the link */
+      .buttons {
+        display: flex;
+        justify-content: center; /* Center the link horizontally */
+        width: 100%; /* Full width of the parent container */
+        margin-top: 20px; /* Add space at the top */
+      }
+
+      /* Style for the link */
+      .buttons a {
+        display: inline-block;
+        padding: 15px 30px;
+        background-color: #ce1039; /* Background color */
+        color: white; /* Text color */
+        font-size: 18px; /* Font size */
+        font-family: Arial, sans-serif; /* Font family */
+        border-radius: 8px;
+        text-align: center;
+        text-decoration: none; /* Remove underline from the link */
+        transition: background-color 0.3s ease;
+      }
+
+      .buttons a:hover {
+        background-color: #a00d2b; /* Darker background on hover */
+      }
+
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #f0f0f0;
+      }
+
+      header {
+        background-color: #333;
+        padding: 10px;
+        text-align: center;
+      }
+
+      main {
+        padding: 20px;
+      }
+
+      footer {
+        text-align: center;
+        background-color: #333;
+        color: white;
+        padding: 10px 0;
+        position: absolute;
+        width: 100%;
+        bottom: 0;
+      }
+
+      body {
+        background-image: url("human-evolution.jpg"); /* Use the relative path */
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        height: 100vh;
+        margin: 0;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h2>Parents survey</h2>
+    </header>
+    <h2>As a parent, give feedback on how the learning eperience was for you and your child by completing a survey.Click on "open survey" below to access the survey.</h2>
+
+    <div class="container">
+      <div class="documents">
+        <div class="document">
+          <!-- Document content goes here -->
+        </div>
+      </div>
+
+      <div class="buttons">
+        <!-- Replace the button with a clickable link -->
+        <a href="https://getfoureyes.com/s/2Lj6f/" target="_blank">Open the survey</a>
+      </div>
+    </div>
+  </body>
+</html>
